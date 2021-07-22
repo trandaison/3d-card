@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Tamma 2', cursive;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  background: hsl(223, 20%, 15%);
+}
+
+.container {
+  width: 32rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  min-height: 80vh;
+  width: 26rem;
+  border-radius: 30px;
+  padding: 0 3rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+  background: #31394D;
+  transform-style: preserve-3d;
+}
+
+.avatar {
+  padding: 3rem 0;
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar .circle {
+  width: 8rem;
+  height: 8rem;
+  background: hsl(222deg 22% 20%);
+  box-shadow: 0 0 30px hsl(222deg 22% 16%);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.avatar img {
+  width: 8rem;
+  border-radius: 50%;
+  z-index: 2;
+  transition: 0.75s ease-out;
+}
+
+.info {
+  text-align: center;
+}
+
+.info .name {
+  color: white;
+  font-size: 2.5rem;
+  transition: 0.75s ease-out;
+}
+
+.info .description {
+  font-size: 1.2rem;
+  color: #aaa;
+  transition: 0.75s ease-out;
+}
+
+.skills {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.125rem;
+  margin: 2rem 0;
+  transition: 0.75s ease-out;
+}
+
+.skills span {
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  color: white;
+}
+
+.hire {
+  text-align: center;
+  padding: 2rem 0;
+  transition: 0.75s ease-out;
+}
+
+.hire button {
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.3rem;
+  background: linear-gradient(to top right, #8162CE, #F54BA5);
+  border: none;
+  border-radius: 30px;
+}
+
+.bg-0 {
+  background: linear-gradient(to top right, #8162CE, #F54BA5);
+}
+
+.bg-1 {
+  background: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+}
+
+.bg-2 {
+  background: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
+}
+
+.bg-3 {
+  background: linear-gradient(to bottom right, #6452E9, #639FF9);
+}
